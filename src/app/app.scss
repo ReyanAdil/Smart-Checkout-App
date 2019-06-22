@@ -1,0 +1,97 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+
+.background-theme{
+  background: linear-gradient(to bottom, #E28413, #CC5209, #EA1744);
+  color: white;
+  font-family: "Open Sans";
+}
+
+.nav-animation{
+  text-shadow: 6px 8px 15px #EA1744;
+  font-size: larger;
+  position: relative;
+  animation: animateTextShadow 8s linear infinite;
+}
+
+.card-theme{
+  background: transparent;
+  //opacity: 0.6;
+}
+button{
+  opacity: 0.8;
+}
+.cartEmpty{
+  margin-left: 35px;
+  margin-right: 35px;
+  opacity: 0.3;
+}
+.cartEmptyTagLine{
+  text-align: center;
+  padding-top: 18%;
+  opacity: 0.4;
+}
+
+.animated {
+  animation-duration: .8s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+@keyframes animateTextShadow {
+  0%   {left:-5%;}
+
+  50%  {left:5%;}
+
+  100%  {left:-5%; right:90%;}
+
+}
+
+.delay-one {
+  animation-delay: 1s;
+}
